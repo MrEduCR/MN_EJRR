@@ -1,5 +1,5 @@
 <?php
-include_once "../layoutExterno.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/MN_EJRR/Views/layoutExterno.php";
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +51,7 @@ MostrarCSS();
                                     <div class="signup-wrapper">
                                         <div class="form-wrapper">
                                             <h3 class="mb-15">Recuperar Acceso</h3>
-                                            
+
                                             <form action="#">
                                                 <div class="row">
                                                     <div class="col-12">
@@ -61,15 +61,17 @@ MostrarCSS();
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
-                                                        <div class="button-group d-flex justify-content-center flex-wrap">
-                                                            <button class="main-btn primary-btn btn-hover w-100 text-center">
+                                                        <div
+                                                            class="button-group d-flex justify-content-center flex-wrap">
+                                                            <button
+                                                                class="main-btn primary-btn btn-hover w-100 text-center">
                                                                 Procesar
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </form>
-                                            <div class="singup-option pt-40">                                        
+                                            <div class="singup-option pt-40">
                                                 <p class="text-sm text-medium text-dark text-center">
                                                     Ya tiene una cuenta? <a href="login.php">Inicia Sesión</a>
                                                 </p>
