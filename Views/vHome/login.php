@@ -60,13 +60,13 @@ MostrarCSS();
                                         <div class="form-wrapper">
                                             <h3 class="mb-15">Iniciar Sesión</h3>
                                          
-                                            <form action="" method="POST">
+                                            <form id="formLogin" method="POST">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="input-style-1">
-                                                            <label>Identificación</label>
-                                                            <input type="text" placeholder="Identificación"
-                                                            id="Identificacion" name="Identificacion" />
+                                                            <label>Correo Electrónico</label>
+                                                            <input type="text" placeholder="Correo Electrónico"
+                                                            id="CorreoElectronico" name="CorreoElectronico" />
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
@@ -121,6 +121,9 @@ MostrarCSS();
     <?php
     MostrarJS();
     ?>
+
+    <script src="../assets/funciones/login.js"></script>
+
 </body>
 
 </html>

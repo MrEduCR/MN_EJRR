@@ -1,9 +1,14 @@
 <?php
 
+if (session_status() === PHP_SESSION_NONE)
+{
+    session_start();
+}
+
 function MostrarNav()
 {
     echo
-        '<aside class="sidebar-nav-wrapper">
+    '<aside class="sidebar-nav-wrapper">
                 <div class="navbar-logo">
                     <a href="index.html">
                     <img src="../assets/images/logo.svg" alt="logo" />
@@ -36,8 +41,10 @@ function MostrarNav()
 
 function MostrarHeader()
 {
+    $nombreUsuario = $_SESSION["NombreUsuario"];
+
     echo
-        '<header class="header">
+    '<header class="header">
                 <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-5 col-md-5 col-6">
@@ -56,30 +63,16 @@ function MostrarHeader()
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <div class="profile-info">
                             <div class="info">
-                                <div class="image">
-                                <img src="../assets/images/profile-image.png" alt="" />
-                                </div>
                                 <div>
-                                <h6 class="fw-500">Adam Joe</h6>
-                                <p>Admin</p>
+                                    <h6 class="fw-500">' . $nombreUsuario . '</h6>
                                 </div>
+                                <div class="image">
+                                    <img src="../assets/images/profile-image.png" alt="" />
+                                </div>                                
                             </div>
                             </div>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
-                            <li>
-                            <div class="author-info flex items-center !p-1">
-                                <div class="image">
-                                <img src="../assets/images/profile-image.png" alt="image">
-                                </div>
-                                <div class="content">
-                                <h4 class="text-sm">Adam Joe</h4>
-                                <a class="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs"
-                                    href="#">Email@gmail.com</a>
-                                </div>
-                            </div>
-                            </li>
-                            <li class="divider"></li>
                             <li>
                             <a href="#0">
                                 <i class="lni lni-user"></i> View Profile
@@ -104,7 +97,7 @@ function MostrarHeader()
 function MostrarFooter()
 {
     echo
-        '<footer class="footer">
+    '<footer class="footer">
                 <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6 order-last order-md-first">
@@ -128,7 +121,7 @@ function MostrarFooter()
 function MostrarCSS()
 {
     echo
-        '<head>
+    '<head>
                 <meta charset="UTF-8" />
                 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -145,7 +138,7 @@ function MostrarCSS()
 function MostrarJS()
 {
     echo
-        '<script src="../assets/js/bootstrap.bundle.min.js"></script>
+    '<script src="../assets/js/bootstrap.bundle.min.js"></script>
             <script src="../assets/js/Chart.min.js"></script>
             <script src="../assets/js/dynamic-pie-chart.js"></script>
             <script src="../assets/js/moment.min.js"></script>

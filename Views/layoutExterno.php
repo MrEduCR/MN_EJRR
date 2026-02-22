@@ -64,13 +64,15 @@ function MostrarCSS()
 function MostrarJS()
 {
     echo
-    '<script src="../assets/js/bootstrap.bundle.min.js"></script>
-            <script src="../assets/js/Chart.min.js"></script>
-            <script src="../assets/js/dynamic-pie-chart.js"></script>
-            <script src="../assets/js/moment.min.js"></script>
-            <script src="../assets/js/fullcalendar.js"></script>
-            <script src="../assets/js/jvectormap.min.js"></script>
-            <script src="../assets/js/world-merc.js"></script>
-            <script src="../assets/js/polyfill.js"></script>
-            <script src="../assets/js/main.js"></script>';
+        '<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+         <script src="../assets/js/bootstrap.bundle.min.js"></script>
+         <script src="../assets/js/Chart.min.js"></script>
+         <script src="../assets/js/dynamic-pie-chart.js"></script>
+         <script src="../assets/js/moment.min.js"></script>
+         <script src="../assets/js/fullcalendar.js"></script>
+         <script src="../assets/js/jvectormap.min.js"></script>
+         <script src="../assets/js/world-merc.js"></script>
+         <script src="../assets/js/polyfill.js"></script>
+         <script src="../assets/js/main.js"></script>';
 }
